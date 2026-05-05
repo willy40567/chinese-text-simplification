@@ -1,0 +1,161 @@
+# =============================================================
+# 教科書版權與個人資料（PUBLIC repo 不可上傳）
+# =============================================================
+# 課本原始檔
+txt_output/
+*.zip
+
+# 標註 JSON 與訓練資料（含教科書原文，版權考量不公開）
+完成標註/
+training_data.jsonl
+training_data_v*.jsonl
+
+# Few-Shot 推論結果（含教科書原文輸入）
+few_shot_results.jsonl
+few_shot_eval_report.json
+
+# 評估細節報告（含教科書原文 source 欄位）
+# 公開版改用 eval_report_v5_summary.json（已去除原文）
+eval_report_v5.json
+
+# 研究報告 PDF（含個人/論文資訊）
+完整版新聞HSK三級簡化與詞彙標註研究報告.pdf
+論文數據匯出.txt
+論文圖片/
+
+# v2_annotations 中間檔
+v2_annotations.json
+
+# =============================================================
+# HSK 詞庫附屬資料（專案僅用 HSK Words/，其他不必要）
+# =============================================================
+New HSK (2025)/Anki xiehanzi/
+New HSK (2025)/Audio/
+New HSK (2025)/HSK Handwritten/
+New HSK (2025)/HSK Hanzi/
+New HSK (2025)/HSK Words/temp/
+
+# =============================================================
+# 個人備份 / 舊檔
+# =============================================================
+llama_local_backup.yml
+simplification_gui copy.py
+論文圖片/
+測試文檔/
+
+# =============================================================
+# Python
+# =============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# =============================================================
+# IDE / Editor
+# =============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+tempCodeRunnerFile.py
+"simplification_gui copy.py"
+
+# =============================================================
+# 模型權重 / Checkpoint（過大、可重新生成）
+# =============================================================
+# 5-fold CV 中間結果（4.8GB）
+peft_results/
+
+# 訓練 checkpoint 與日誌
+peft_checkpoints/
+peft_logs/
+
+# CPU offload 暫存（推論時自動產生）
+offload_tmp/
+
+# 舊的 LoRA checkpoint（保留 lora_weights/full_train/final_lora/）
+lora_weights/checkpoint-*/
+lora_weights/adapter_config.json
+lora_weights/adapter_model.safetensors
+lora_weights/special_tokens_map.json
+lora_weights/tokenizer.json
+lora_weights/tokenizer_config.json
+lora_weights/full_train/checkpoint-*/
+
+# =============================================================
+# 外部資料集（過大，README 給連結即可）
+# =============================================================
+mcts-main/
+
+# =============================================================
+# 過時 / 棄用檔案（不上傳避免混淆）
+# =============================================================
+evaluate_model.py
+evaluate_model v2.py
+evaluate_v2.py
+evaluate_few_shot.py
+"simplification_gui copy.py"
+tempCodeRunnerFile.py
+
+# 舊版評估報告（只保留最終 eval_report_v5.json）
+eval_report.json
+eval_report_v2.json
+eval_report_v2_fixed.json
+eval_results_v2.json
+eval_comparison.png
+eval_comparison_fixed.png
+few_shot_eval_report.json
+hsk_coverage_analysis.json
+hsk_coverage_report.json
+hsk_comparison_chart.png
+
+# 舊版訓練資料
+training_data.jsonl
+training_data_v4.jsonl
+完成標註/training_data.jsonl
+完成標註/training_data_v2.jsonl
+完成標註/training_data_v3.jsonl
+完成標註/training_data_v4.jsonl
+
+# 一次性資料清理腳本
+fix_json_clean.py
+fix_vocab.py
+fixjason.py
+cleaned.py
+cleaned_vocabulary_for_llm.csv
+verify.py
+check_words.py
+
+# v2_annotations.json（中間檔）
+v2_annotations.json
+
+# =============================================================
+# 系統 / 暫存
+# =============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+
+# =============================================================
+# 個人資料 / 敏感資訊
+# =============================================================
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+credentials.json
+hf_token.txt
+.huggingface/

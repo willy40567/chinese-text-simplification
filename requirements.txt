@@ -1,0 +1,31 @@
+# 中文閱讀障礙課文三級簡化系統 — Python 依賴
+# 在 RTX 4070 12GB / Python 3.9-3.11 / CUDA 12.1 環境下驗證
+
+# === 核心：LLM 與微調 ===
+torch>=2.5.0
+transformers>=4.45.0
+peft>=0.7.1
+bitsandbytes>=0.41.0
+datasets>=2.14.0
+accelerate>=0.25.0
+safetensors>=0.4.0
+
+# === 評估指標 ===
+bert-score>=0.3.13
+sentence-transformers>=2.3.0
+
+# === 中文處理 ===
+jieba>=0.42.1
+opencc-python-reimplemented>=0.1.7
+
+# === GUI ===
+ttkbootstrap>=1.10.0
+
+# === 數值與視覺化 ===
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+openpyxl>=3.1.0   # for reading TBCL .xlsx
+
+# === 開發工具（選用） ===
+# tqdm>=4.66.0

@@ -1,0 +1,35 @@
+{
+  "level1": {
+    "sari_mean": 0.4299,
+    "compliance_mean": 0.8196,
+    "bertscore_mean": 0.8096,
+    "n_samples": 26,
+    "sari_breakdown": {
+      "f_add_mean": 0.1143,
+      "f_keep_mean": 0.5018,
+      "p_del_mean": 0.6737
+    }
+  },
+  "level2": {
+    "sari_mean": 0.3549,
+    "compliance_mean": 0.9603,
+    "bertscore_mean": 0.8645,
+    "n_samples": 27,
+    "sari_breakdown": {
+      "f_add_mean": 0.0634,
+      "f_keep_mean": 0.5768,
+      "p_del_mean": 0.4243
+    }
+  },
+  "level3": {
+    "sari_mean": 0.436,
+    "compliance_mean": 0.9506,
+    "bertscore_mean": 0.8768,
+    "n_samples": 27,
+    "sari_breakdown": {
+      "f_add_mean": 0.1339,
+      "f_keep_mean": 0.6324,
+      "p_del_mean": 0.5417
+    }
+  }
+}

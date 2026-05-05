@@ -1,0 +1,28 @@
+{
+  "Before_Original": {
+    "avg_coverage": 0.7186311309168026,
+    "avg_low_level_ratio": 0.5575647435628048,
+    "n": 5
+  },
+  "After_L1": {
+    "avg_coverage": 0.6768236414317514,
+    "avg_low_level_ratio": 0.5163827140132297,
+    "n": 26,
+    "diff_coverage": -0.0418074894850512,
+    "diff_low_level": -0.04118202954957517
+  },
+  "After_L2": {
+    "avg_coverage": 0.6471547791924593,
+    "avg_low_level_ratio": 0.4791576948132132,
+    "n": 27,
+    "diff_coverage": -0.0714763517243433,
+    "diff_low_level": -0.07840704874959165
+  },
+  "After_L3": {
+    "avg_coverage": 0.6424589159877861,
+    "avg_low_level_ratio": 0.4665359958293183,
+    "n": 27,
+    "diff_coverage": -0.07617221492901649,
+    "diff_low_level": -0.09102874773348651
+  }
+}
