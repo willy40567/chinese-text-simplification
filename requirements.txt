@@ -21,6 +21,12 @@ opencc-python-reimplemented>=0.1.7
 # === GUI ===
 ttkbootstrap>=1.10.0
 
+# === 服務化 (FastAPI + Gradio Web 介面) ===
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+httpx>=0.27.0      # FastAPI TestClient 需要
+gradio>=4.0.0     # Web UI（掛進 FastAPI /ui）
+
 # === 數值與視覺化 ===
 numpy>=1.24.0
 pandas>=2.0.0
